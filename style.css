@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #010133;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#header-left{
+	width: 35%;
+	position: relative;
+	display: flex;
+}
+
+header #image{
+	width: 7rem;
+}
+header #image img{
+	width: 100%;
+}
+
+header #logo-name{
+	width: 10rem;
+	color: white;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+header #logo-name span{
+	display: block;
+	font-size: 1.5rem;
+}
+header #favourite{
+	width: 2rem;
+	color: white;
+	align-self: center;
+	flex-grow: 1;
+	padding-left: 50px;
+}
+#header-right{
+	width: 55%;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+#header-right #search-bar{
+	width: 70%;
+	height: 50px;
+	border-radius: 20px;
+	padding: 5px;
+	position: relative;
+	background-color: #5050ff4d;
+	margin-right: 55px;
+}
+
+#header-right #search-bar input{
+	width: 85%;
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	padding: 5px;
+	padding-left: 15px;
+	color: white;
+	background-color: #5050ff00;
+}
+
+#header-right #search-bar span{
+	color: white;
+	font-size: 1.5rem;
+	padding-left: 5px;
+	font-weight: 100;
+}
+#header-right #search-bar input::placeholder{
+	font-size: 1.7rem;
+}
+
+#header-right #search-bar span .fa-microphone{
+	color: silver;
+}
+
+#header-right #noto-bell{
+	font-size: 2rem;
+	margin-right: 50px;
+}
+
+#header-right #noto-bell a{
+	color: white;
+}
+
+#header-right #header-profile{
+	width: 4rem;
+	height: 4rem;
+	
+}
+
+#header-right #header-profile img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+	
+}
+
+
+/*main*/
+
+main{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1.2rem;
+}
+
+#main-left{
+	width: 60%;
+	height: 10rem;
+	border: 1px solid red;
+	margin-left: 80px;
+}
+#main-right{
+	width: 25%;
+	height: 10rem;
+	border: 1px solid red;
+	margin-right: 100px;
+}
