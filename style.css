@@ -116,6 +116,7 @@ main{
 	display: flex;
 	margin-top: 1.2rem;
 	position: relative;
+	justify-content: space-around;
 }
 
 #main-left{
@@ -160,15 +161,14 @@ main{
 
 #latest-release-content>div{
 	height: 7rem;
-	min-width: 21rem;
-	width: 23rem;
-	margin: 1rem 0.3rem 1rem 0rem;
+	width: 40%;
+	margin: 1rem 1rem 1rem 0rem;
 	display: inline-block;
 	padding: 3px;
 }
 .latest-rel-box td{
 	height: 6rem;
-	width: 6rem;
+	width: 30%;
 	
 }	
 .latest-rel-box td img{
@@ -177,7 +177,7 @@ main{
 	opacity: 0.7;
 }
 .latest-rel-box  .td{
-	width: 15rem;
+	width: 50%;
 	padding: 0.8rem;
 }
 .latest-rel-box td i{
@@ -185,7 +185,55 @@ main{
 	margin-bottom: 0.8rem;
 }
 .latest-rel-box .time{
-	width: 3rem;
+	width: 20%;
+}
+
+/* popualar-artist */
+
+#pop-artist{
+	color: white;
+	height: auto;
+	width: 100%;
+	padding: 0.5rem;
+}
+#pop-artist-container{
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+#pop-artist-container > div{
+	height: 10rem;
+	width: 32%;
+	padding: 0.5rem;
+	text-align: center;
+	position: relative;
+}
+#pop-artist-container img{
+	height: 85%;
+	width: 85%;
+	border-radius: 50%;
+	margin-bottom: 0.5rem;
+}
+#pop-artist-container #i{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	transition: ease-in-out 0.5s;
+}
+
+ #pop-artist-container i{
+	position: absolute;
+	top:35%;
+	right: 45%;
+	
+	font-size: 2rem;
+}
+#pop-artist-container #i:hover{
+	opacity: 1;
 }
 
 
@@ -217,7 +265,7 @@ main{
 }
 #main-right #h2{
 	display: inline-block;
-	margin-left: 15rem;
+	margin-left: 50%;
 	color: cyan;	
 	position: relative;
 }
