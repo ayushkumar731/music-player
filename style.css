@@ -136,7 +136,7 @@ main{
 }
 #crousal>div{
 	height: 15rem;
-	width: 15rem;
+	width: 30%;
 }
 #crousal img{
 	height: 100%;
@@ -205,7 +205,7 @@ main{
 }
 #pop-artist-container > div{
 	height: 10rem;
-	width: 32%;
+	width: 10rem;
 	padding: 0.5rem;
 	text-align: center;
 	position: relative;
@@ -236,13 +236,84 @@ main{
 	opacity: 1;
 }
 
+/* mood */
+
+#mood{
+	width: 100%;
+	height: 11rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px;
+	background-color:#0e0e5b;
+	position: relative;
+}
+#mood > div{
+	width: 6rem;
+	height: 6rem;
+	margin-right: 13px;
+	margin-left: 3px;
+	position: relative;
+}
+#mood #station{
+	width:13rem;
+	height: 13rem;
+	position: relative;
+}
+
+#mood #outer{
+	position: absolute;
+	top: 27%;
+	left: 0.1px;
+	height: 100px;
+	width: 100%;
+	background-color: #ecec07;
+}
+#mood #inner{
+	position: absolute;
+	left: 5%;
+	top: -9%;
+	height: 120px;
+	width: 90%;	
+	background-color: #ecec07;
+}
+#mood #most-inner{
+	position: absolute;
+	top: -15%;
+	left: 5%;
+	height: 150px;
+	width: 90%;
+	background-color: orange;
+}
+#mood #most-inner img{
+	position:absolute;
+	top: 18%;
+	left: 15%;
+	height: 70%;
+	width: 70%;
+}
+#mood img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+#mood h3{
+	position: absolute;
+	color: white;
+	top:50%;
+	left: 50%;
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	transform: translate(-50%,-50%);
+}
 
 /* main-right */
 
 #main-right{
 	width: 35%;
 	height:100vh;
-	margin-right: 100px;
+	margin-right: 2%;
 	padding: 1rem;
 	position: sticky;
 	top: 0;
