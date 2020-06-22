@@ -308,6 +308,40 @@ main{
 	transform: translate(-50%,-50%);
 }
 
+/* situation */
+
+#situation{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+#situation>div{
+	width: 16rem;
+	height: 12rem;
+	position: relative;
+	transition: ease-in-out 0.5s;
+}
+#situation>div:hover{
+
+	transform: scale(1.18);
+	overflow: hidden;
+}
+#situation img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+}
+#situation p{
+	color: white;
+	font-size:1.7rem;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
 /* main-right */
 
 #main-right{
