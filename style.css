@@ -120,7 +120,7 @@ main{
 }
 
 #main-left{
-	width: 53%;
+	width: 75%;
 	height: 100rem;
 	margin-left: 80px;
 }
@@ -136,7 +136,7 @@ main{
 }
 #crousal>div{
 	height: 15rem;
-	width: 30%;
+	width: 21rem;
 }
 #crousal img{
 	height: 100%;
@@ -144,7 +144,7 @@ main{
 	transition: ease-in-out 0.5s;
 }
 #crousal img:hover{
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 /* latest-release */
@@ -200,7 +200,7 @@ main{
 	display: flex;
 	width: 100%;
 	height: auto;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 2rem;
 }
 #pop-artist-container > div{
@@ -211,8 +211,8 @@ main{
 	position: relative;
 }
 #pop-artist-container img{
-	height: 85%;
-	width: 85%;
+	height: 83%;
+	width: 83%;
 	border-radius: 50%;
 	margin-bottom: 0.5rem;
 }
@@ -316,7 +316,7 @@ main{
 	justify-content: space-between;
 }
 #situation>div{
-	width: 16rem;
+	width: 21.5rem;
 	height: 12rem;
 	position: relative;
 	overflow: hidden;
@@ -334,7 +334,7 @@ main{
 
 #situation p{
 	color: white;
-	font-size:1.7rem;
+	font-size:1.9rem;
 	font-weight: bold;
 	position: absolute;
 	top: 50%;
@@ -382,9 +382,9 @@ main{
 /* main-right */
 
 #main-right{
-	width: 35%;
+	width: 25%;
 	height:100vh;
-	margin-right: 2%;
+	/* margin-right: 2%; */
 	padding: 1rem;
 	position: sticky;
 	top: 0;
@@ -407,7 +407,7 @@ main{
 }
 #main-right #h2{
 	display: inline-block;
-	margin-left: 50%;
+	float :right;
 	color: cyan;	
 	position: relative;
 }
@@ -427,25 +427,32 @@ main{
 
 #main-right-content td{
 	color:silver ;
-	height: 6rem;
-	width: 6rem;
-	font-size: 1.5rem;
-	padding: 15px;
+	height: 5rem;
+	width: 4rem;
+	font-size: 1.2rem;
+	padding: 5px;
 	margin-left: 1rem;
+
 }
 #main-right-content .td{
-	text-align: right;
+	text-align: center;
 }
 #main-right-content td img{
 	height: 100%;
 	width: 100%;
-	border-radius: 8px;
+	width: 5rem;
+	border-radius: 5px;
 }
 
 #main-right-content .heart{
 	text-align: right;
 	cursor: pointer;
+	color: blue;
+	font-size: 1.5rem;
 }
 #main-right-content .space{
-	width: 12rem;
+	width: 10rem;
+	text-align: center;
+	font-size: 1.1rem;
+	line-height: 2.1rem;
 }
