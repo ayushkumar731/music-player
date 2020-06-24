@@ -165,6 +165,7 @@ main{
 	margin: 1rem 1rem 1rem 0rem;
 	display: inline-block;
 	padding: 3px;
+	margin-left: 2rem;
 }
 .latest-rel-box td{
 	height: 6rem;
@@ -397,7 +398,7 @@ main{
 
 /* main-right-heading */
 
-#margin-right-heading{
+#main-right-heading{
 	margin-bottom: 3rem;
 }
 
@@ -405,22 +406,62 @@ main{
 	display: inline-block;
 	color:white;
 }
-#main-right #h2{
+#main-right #head-right{
 	display: inline-block;
-	float :right;
+	float:right;
 	color: cyan;	
 	position: relative;
 }
-#main-right #h2 a{
-	color: cyan;
-	text-decoration: none;
+
+#main-right #head-right h2{
+	display: inline-block;
+	margin-right: 0.8rem;
 }
 
-#main-right h2 i{
-	margin-left: 1.2rem;
-	transform: rotate(180deg);
-	cursor: pointer;
+#arrow{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
 }
+#button{
+	display: none;
+}
+#arrow i{
+	transform: rotate(180deg);
+	font-size: 2rem
+}
+#arrow-list{
+	position: absolute;
+	top:3rem;
+	right: 0rem;
+	width: 13rem;
+	height: auto;
+	padding: 5px;
+	font-size: 1.3rem;
+	background-color: #222;
+	display: none;
+
+}
+#arrow label{
+  	cursor: pointer;
+}
+#arrow-list p{
+
+	color: white;
+	line-height: 3.5rem;
+	letter-spacing: 3.3px;
+	margin-left: 1.3rem;
+}
+#arrow-list #border{
+	border-bottom: 1px solid white;
+}
+
+#button:checked ~ #arrow-list{
+  display: block;
+}
+
 
 
 /* main-right-content */
