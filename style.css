@@ -466,34 +466,111 @@ main{
 
 /* main-right-content */
 
-#main-right-content td{
-	color:silver ;
-	height: 5rem;
-	width: 4rem;
-	font-size: 1.2rem;
-	padding: 5px;
-	margin-left: 1rem;
+.queue-list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+#main-right-content .queue-num{
+	width: 2.2rem;
+	padding: 15px;
+	font-size: 1.3rem;
+	color: white;
+	text-align:center;
+}
+#main-right-content .queue-img{
+	width: 4.5rem;
+}
 
-}
-#main-right-content .td{
-	text-align: center;
-}
-#main-right-content td img{
-	height: 100%;
+#main-right-content .queue-img img{
 	width: 100%;
-	width: 5rem;
-	border-radius: 5px;
+	height: 100%;
 }
 
-#main-right-content .heart{
-	text-align: right;
-	cursor: pointer;
-	color: blue;
-	font-size: 1.5rem;
-}
-#main-right-content .space{
+#main-right-content .queue-name{
+	color: whitesmoke;
 	width: 10rem;
+	line-height: 2.2rem;
+}
+#main-right-content .queue-name p{
+	font-size: 1.2rem;
+}
+#main-right-content .queue-icon{
+	width: 2.6rem;
+	color: whitesmoke;
+	font-size: 2rem;
+}
+
+
+
+
+/* //////////footer////////// */
+footer{
+	position: fixed;
+	bottom: 0;
+	z-index: 1000552522;
+	width: 100%;
+	background-color: #222;
+	display: flex;
+	padding: 10px 0;
+	justify-content: space-around;
+}
+footer #song-detail{
+	width: 25rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer #song-detail>div{
+	width: 6rem;
+}
+footer #song-detail #singer-name{
+	width: 11rem;
+	padding: 20px 0;
+	color: white;
+}
+footer #song-detail #icon{
 	text-align: center;
-	font-size: 1.1rem;
-	line-height: 2.1rem;
+	color: white;
+	font-size: 1.8rem;
+}
+footer #song-detail #icon i{
+	margin-right: 18px;
+	margin-top: 40%;
+}
+footer #song-detail #singer-img img{
+	width: 100%;
+	height: 100%;
+}
+footer #audio{
+	width: 38rem;
+	text-align: center;
+	padding: 5px;
+}
+
+footer #audio #audio-icon i{
+	color: white;
+	font-size: 2rem;
+	margin-left: 1.8rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+footer #audio #audio-bar>div{
+	display: inline-block;
+}
+footer #audio #audio-bar p{
+	color: white;
+	font-size: 1.2rem;
+}
+footer #audio #audio-bar input{
+	width:28rem
+}
+
+footer #volume{
+	width: 20rem;
+	color: white;
+}
+footer #volume>div{
+	display: inline-block;
+	margin: 40px 12px;
+	font-size: 1.2rem;
 }
