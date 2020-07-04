@@ -158,36 +158,82 @@ main{
 
 /* latest-release-content */
 
-
+#latest-release-content{
+	display: flex;
+	flex-wrap: wrap;
+}
 #latest-release-content>div{
 	height: 7rem;
 	width: 40%;
 	margin: 1rem 1rem 1rem 0rem;
-	display: inline-block;
 	padding: 3px;
 	margin-left: 2rem;
 }
-.latest-rel-box td{
-	height: 6rem;
-	width: 30%;
-	
-}	
-.latest-rel-box td img{
-	height: 100%;
+#main-left #latest-release-content .lat-release{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+#latest-release-content .lat-rel-img{
+	height: 6.8rem;
+	width: 7.5rem;
+	position: relative;
+}
+#latest-release-content .lat-rel-img img{
 	width: 100%;
+	height: 100%;
 	opacity: 0.7;
 }
-.latest-rel-box  .td{
-	width: 50%;
-	padding: 0.8rem;
+#latest-release-content .lat-rel-img #fa-play{
+	position: absolute;
+	top: 0;
+	font-size: 1.8rem;
+	height: 100%;
+	width: 100%;
+	padding: 40px 50px;
+	opacity: 0;
+	z-index: 10;
+
 }
-.latest-rel-box td i{
-	display:block;
-	margin-bottom: 0.8rem;
+#latest-release-content .lat-rel-img #fa-play a{
+	color: white;
+	text-decoration: none;
 }
-.latest-rel-box .time{
-	width: 20%;
+#latest-release-content .lat-rel-img #fa-pause:hover{
+	opacity: 1;
+
 }
+#latest-release-content .lat-rel-img #fa-pause{
+	position: absolute;
+	top: 0;
+	font-size: 1.8rem;
+	height: 100%;
+	width: 100%;
+	padding: 40px 50px;
+	opacity: 0;
+
+}
+#latest-release-content .lat-rel-img #fa-play:hover{
+	opacity: 1;
+
+}
+#latest-release-content .lat-title{
+	height: 6.8rem;
+	padding: 25px 15px;
+	width: 10rem;
+	line-height:1.7rem;
+	flex-grow: 1;
+}
+
+
+#latest-release-content .time{
+	height: 6.8rem;
+	width:4.5rem ;
+	line-height: 1.6rem;
+	padding: 20px 8px;
+}
+
+
 
 /* popualar-artist */
 
@@ -509,11 +555,20 @@ footer{
 	position: fixed;
 	bottom: 0;
 	z-index: 1000552522;
-	width: 100%;
+	width: 0;
 	background-color: #222;
 	display: flex;
-	padding: 10px 0;
+	padding: 5px 0;
 	justify-content: space-around;
+}
+#footer{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+#footer:target{
+	height: auto;
+	width: 100%;
 }
 footer #song-detail{
 	width: 25rem;
@@ -549,7 +604,7 @@ footer #audio{
 
 footer #audio #audio-icon i{
 	color: white;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-left: 1.8rem;
 	margin-bottom: 2rem;
 	cursor: pointer;
